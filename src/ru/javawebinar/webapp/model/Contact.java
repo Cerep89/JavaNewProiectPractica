@@ -20,4 +20,5 @@ public class Contact {
     public String getValue() {
         return value;
     }
+
 }

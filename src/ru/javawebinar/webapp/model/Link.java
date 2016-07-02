@@ -5,8 +5,14 @@ package ru.javawebinar.webapp.model;
  * 26.06.2016.
  */
 public class Link {
+    public static Link empty = new Link();
     private final String name;
     private final String url;
+
+    public Link() {
+        this("",null);
+    }
+
     public Link(String name, String url) {
         this.name = name;
         this.url = url;
@@ -34,5 +40,13 @@ public class Link {
         int result = name.hashCode();
         result = 31 * result + (url != null ? url.hashCode() : 0);
         return result;
+    }
+
+    @Override
+    public String toString() {
+        return "Link{" +
+                "name='" + name + '\'' +
+                ", url='" + url + '\'' +
+                '}';
     }
 }
