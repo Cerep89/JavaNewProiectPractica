@@ -9,6 +9,7 @@ import java.util.List;
 public class Resume {
    private String fullNamme;
    private  String location;
+   private  String homePage;
    List<Contact> contacts ;
    List<Section> sections ;
 }
