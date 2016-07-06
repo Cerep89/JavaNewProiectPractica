@@ -9,6 +9,8 @@ import ru.javawebinar.webapp.model.ContactType;
  */
 public class Main {
     public static void main(String[] args) {
+
         Contact cont = new Contact(ContactType.PHONE, "125337788");
+
     }
 }
